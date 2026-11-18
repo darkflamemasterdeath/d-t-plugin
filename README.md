@@ -1,4 +1,4 @@
-# test-hello-plugin
+# d-t-hello-plugin
 
 源码在 `src/index.ts`。插件监听每次工具执行结束，把时间、执行人、会话、工具名和结果追加到桌面的 `tool-results.md`。
 
