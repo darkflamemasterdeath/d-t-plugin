@@ -1,4 +1,4 @@
-# ywj-hello-plugin
+# d-t-hello-plugin
 
 一个 DeepSeek Harness 组合包。源码在 `src/index.ts`。装上之后，模型可以调用 `greet`，用配置里的问候语打招呼。
 
