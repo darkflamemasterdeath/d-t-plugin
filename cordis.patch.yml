@@ -1,0 +1,6 @@
+- insert:
+    - id: hello
+      name: test-hello-plugin
+      config:
+        greeting: 'testplugin!'
+        repeat: 2

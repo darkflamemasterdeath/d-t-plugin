@@ -1,0 +1,33 @@
+{
+  "name": "test-hello-plugin",
+  "version": "0.1.0",
+  "description": "Small DeepSeek Harness plugin that greets someone with a configurable phrase.",
+  "type": "module",
+  "main": "lib/index.js",
+  "files": ["lib", "src", "cordis.patch.yml", "README.md"],
+  "scripts": {
+    "build": "tsdown",
+    "prepare": "tsdown"
+  },
+  "engines": {
+    "node": ">=24.9.0",
+    "dsh": ">=0.2.0 <0.3.0"
+  },
+  "peerDependencies": {
+    "@deepseek-ai/cordis": "^4.1.0",
+    "@deepseek-ai/dsh-tools": ">=0.2.0 <0.3.0",
+    "@deepseek-ai/schemastery": "^3.19.0"
+  },
+  "devDependencies": {
+    "@deepseek-ai/cordis": "^4.1.0",
+    "@deepseek-ai/dsh-tools": "0.2.2-rc.1",
+    "@deepseek-ai/schemastery": "^3.19.0",
+    "tsdown": "^0.22.2",
+    "typescript": "^6.0.3"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
